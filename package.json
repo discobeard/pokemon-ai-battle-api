@@ -1,0 +1,51 @@
+{
+  "name": "pokemon-ai-battle-api",
+  "version": "0.1.0",
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc -w",
+    "test": "jest",
+    "cdk": "cdk",
+    "lint": "tsc && eslint .",
+    "lint:fix": "eslint . --fix",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "prepare": "husky"
+  },
+  "devDependencies": {
+    "@aws-cdk/aws-lambda-python-alpha": "2.271.0-alpha.0",
+    "@eslint/js": "^10.0.1",
+    "@swc/core": "^1.15.0",
+    "@swc/jest": "^0.2.39",
+    "@types/jest": "^30",
+    "@types/node": "^24.10.1",
+    "aws-cdk": "2.1143.0",
+    "eslint": "^10.11.0",
+    "eslint-config-prettier": "^10.1.8",
+    "globals": "^17.12.0",
+    "husky": "^9.1.7",
+    "jest": "^30",
+    "jiti": "^2.7.0",
+    "lint-staged": "^17.6.0",
+    "prettier": "^3.9.9",
+    "tsx": "^4.23.0",
+    "typescript": "~6.0",
+    "typescript-eslint": "^8.70.1"
+  },
+  "dependencies": {
+    "aws-cdk-lib": "2.271.0",
+    "constructs": "^10.5.0"
+  },
+  "engines": {
+    "node": ">=24"
+  },
+  "lint-staged": {
+    "*.{ts,mts}": [
+      "eslint --fix",
+      "prettier --write"
+    ],
+    "*.{json,md,yaml,yml}": [
+      "prettier --write"
+    ]
+  }
+}

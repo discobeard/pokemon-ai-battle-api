@@ -1,0 +1,4 @@
+# Local development and CI only; not bundled into Lambdas (boto3 is provided by the Lambda runtime).
+boto3
+moto[secretsmanager]
+pytest
